@@ -13,15 +13,43 @@
     <title>Mind Nest</title>
     <style>
       .navbar-mint {
-        background-color: #3eb489  !important; /* pastel mint background */
+        background-color: #3eb489  /* pastel mint background */
       }
-      .navbar-mint .navbar-nav .nav-link,
-      .navbar-mint .navbar-brand {
-        color: #14352d !important;      /* darker teal for better contrast */
-        font-weight: 600 !important;    /* bolder text for visibility */
-        text-shadow: 0 1px 2px #ffffff33; /* subtle light shadow for clarity */
+      .navbar-active-link {
+        color:#14352d  !important; /* darker teal for active links */
       }
       
+       Make the depression image bigger than its text on all screens
+      #infoCarousel .carousel-item .col-md-6.text-center img[alt="Mental Health Info 3"] {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        max-height: 400px;
+        min-width: 250px;
+        min-height: 250px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        margin: auto;
+        z-index: 1;
+      }
+     
+          .motd-gradient-bg {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%, #fcb69f 80%, #a1c4fd 100%);
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(135deg, #a8edea 0%, #fed6e3 100%, #fcb69f 80%, #a1c4fd 100%);
+          }
+       
+
+      @media (max-width: 767.98px) {
+        #infoCarousel .carousel-item .col-md-6.text-center img[alt="Mental Health Info 3"] {
+          width: 100%;
+          height: 260px;
+          max-width: 100%;
+          max-height: 260px;
+          min-width: 180px;
+          min-height: 180px;
+        }
+      }
     </style>
 </head>
 <body>
@@ -54,16 +82,13 @@
               <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Information</a>
+              <a class="nav-link" href="#information">Information</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="resources.html">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Get in touch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="resources.html#faq">FAQ</a>
             </li>
           </ul>
         </div>
@@ -77,131 +102,148 @@
         <div class="row justify-content-center align-items-center h-100" style="min-height: 400px;">
             <div class="col-lg-8 text-center"> </div>
                 <h1 class="display-4 fw-bold mb-3">Welcome to Mind Nest</h1>
-                <p class="lead mb-4">
-      </p>              A space designed for tranquility, belonging, and emotional well-being.<br />
-                    🌿 <strong>Find Peace</strong> Explore resources that bring comfort and clarity.<br />
-                    💙 <strong>Feel Supported</strong> You're not alone; gentle guidance is here for you.<br />
-                    ✨ <strong>Embrace Growth</strong> Small steps can lead to powerful change.<br />
-                    Take a deep breath, settle in, and let Soul Nest be your sanctuary.
-                </p>
+                <p class="lead mb-4" style="color: #f6d1c1;">
+              A space designed for tranquility, belonging, and emotional well-being.<br>
+                    </p>
+                    🌿 <strong>Find Peace</strong><p style="color: #fbf4f9;"> Explore resources that bring comfort and clarity.</p><br>
+                    🌿 <strong>Find Peace</strong><p style="color: #fbf4f9;"> Explore resources that bring comfort and clarity.</p><br>
+                    💙 <strong>Feel Supported</strong><p style="color: #fbf4f9">You're not alone; gentle guidance is here for you.</p><br>
+                    ✨ <strong>Embrace Growth</strong><p style="color: #fbf4f9">Small steps can lead to powerful change.></p> <br />
+                   
             </div>
-            <a href="resources.html" class="btn btn-outline-info btn-lg">Get support</a>
+            <a href="resources.html" class="btn btn-outline-warning btn-lg">Get support</a>
         </div>
     </div>
 </header>
     <!-- Hero Section End -->
     <main>
-      <!-- Information Section with Carousel -->
-      <section class="container my-5" id="information">
-        <h2 class="mb-4 text-center">Information</h2>
-        <p class="text-center mb-4">
-          Mental health is an important part of overall well-being. It influences how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices. Understanding and caring for your mental health is just as vital as caring for your physical health.
+  <!-- Information Section with Carousel (gradient background) -->
+  <section id="information" class="motd-gradient-bg py-5" style="border-radius: 0; margin-bottom: 0;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Information</h2>
+      <p class="text-center mb-4">
+        Mental health is an important part of overall well-being. It influences how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices. Understanding and caring for your mental health is just as vital as caring for your physical health.
+      </p>
+        <p class="text-center mb-3">
+          <strong>Understanding Mental Health: </strong>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.
         </p>
-        <ul>
-            <li class="text-center mb-3">
-            <strong>Understanding Mental Health: </strong>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. </a>
-            </li>
-            <li class="text-center mb-3">
-            <strong>Why It Matters: </strong>Good mental health helps you cope with stress, relate to others, and make healthy choices.</a>
-            </li>
-        </ul>
-        <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <h4>🌀 Anxiety</h4>
-                  <p>
-Ever feel like your brain won’t stop worrying about everything? Anxiety can make everyday situations feel overwhelming, bringing racing thoughts, restlessness, and even physical symptoms like a rapid heartbeat.
-🔹 Try deep breathing or grounding techniques to ease anxious moments.
-🔹 Therapy, relaxation, and sometimes medication can help manage it.
-
-                  </p>
-                </div>
-                <div class="col-md-6 text-center">
-                  <img src="assets/images/anxiety.png" class="img-fluid rounded" alt="Mental Health Info 1">
-                </div>
+        <p class="text-center mb-3">
+          <strong>Why It Matters: </strong>Good mental health helps you cope with stress, relate to others, and make healthy choices.
+        </p>
+      <h4 class="mb-4 text-center" style="font-weight: 500; color: #22644b;">Mental Health Challenges</h4>
+      <!-- Carousel START -->
+      <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h5>🌀 Anxiety</h5>
+                <p>
+                  Ever feel like your brain won’t stop worrying about everything? Anxiety can make everyday situations feel overwhelming, bringing racing thoughts, restlessness, and even physical symptoms like a rapid heartbeat.
+                  <br>
+                  🔹 Try deep breathing or grounding techniques to ease anxious moments.<br>
+                  🔹 Therapy, relaxation, and sometimes medication can help manage it.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="assets/images/anxiety.png" class="img-fluid rounded"
+                  alt="Mental Health Info 1">
               </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <h4>⚡ PTSD (Post-Traumatic Stress Disorder)</h4>
-                  <p>           
-Past events can linger in ways we don’t expect. PTSD can cause vivid flashbacks, anxiety, and avoidance of certain triggers.
-🔹 Finding safe ways to process trauma—like therapy or mindfulness—can help.
-🔹 You’re not alone—there are communities and professionals ready to support you.
-</p>
-                </div>
-                <div class="col-md-6 text-center">
-                  <img src="assets/images/ptsd-image.png" class="img-fluid rounded" alt="Mental Health Info 2">
-                </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h5>⚡ PTSD (Post-Traumatic Stress Disorder)</h5>
+                <p>
+                  Past events can linger in ways we don’t expect. PTSD can cause vivid flashbacks, anxiety, and avoidance of certain triggers.
+                  <br>
+                  🔹 Finding safe ways to process trauma-like therapy or mindfulness can help.<br>
+                  🔹 You’re not alone—there are communities and professionals ready to support you.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="assets/images/ptsd-image.png" class="img-fluid rounded"
+                  alt="Mental Health Info 2">
               </div>
             </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <h4>☁️ Depression</h4>
-                  <p>
-Some days feel harder than others—but depression goes beyond feeling sad. It can make you lose interest in things you once loved, mess with your sleep, and drain your energy.
-🔹 Small steps like reaching out to someone or getting outside can help.
-🔹 Therapy, support groups, and self-care are great ways to navigate it.
-  </p>
-                </div>
-                <div class="col-md-6 text-center">
-                  <img src="assets/images/depression-in-mothers.png" class="img-fluid rounded" alt="Mental Health Info 3">
-                </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h5>☁️ Depression</h5>
+                <p>
+                  Some days feel harder than others—but depression goes beyond feeling sad. It can make you lose interest in things you once loved, mess with your sleep, and drain your energy.
+                  <br>
+                  🔹 Small steps like reaching out to someone or getting outside can help.<br>
+                  🔹 Therapy, support groups, and self-care are great ways to navigate it.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="assets/images/depression-in-mothers.png" class="img-fluid rounded"
+                  alt="Mental Health Info 3">
               </div>
             </div>
-            <!-- Slide 4 -->
-            <div class="carousel-item">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <h4>🌈 Bipolar Disorder</h4>          
-                  <p>       Bipolar disorder can feel like riding a rollercoaster of emotions, swinging between high-energy mania and deep lows of depression.
-🔹 Keeping a mood journal can help you and your doctor find patterns.
-🔹 Treatment often includes a mix of medication and therapy to help stabilize mood swings.
-                    </p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                    <img src="assets/images/bipolar-image.png" class="img-fluid rounded" alt="Mental Health Info 4">
-                    </div>
-                </div>
-                </div>
-                <!--Slide 5-->
-                <div class="carousel-item">
-                  <div class="row align-items-center">
-                    <div class="col-md-6">
-                      <h4>♾️ OCD (Obsessive-Compulsive Disorder)</h4>
-                      <p>
-                        
-Ever feel stuck in repetitive thoughts or habits? OCD can create cycles of intrusive thoughts and behaviors that feel hard to break.
-🔹 Exposure therapy and behavioral techniques can make a big difference.
-🔹 Learning to separate yourself from intrusive thoughts is key.</p>
- </div>
-                    <div class="col-md-6 text-center">
-                      <img src="assets/images/ocd-image.png" class="img-fluid rounded" alt="Mental Health Info 5">
-                    </div>
-                  </div>
-                </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h5>🌈 Bipolar Disorder</h5>
+                <p>
+                  Bipolar disorder can feel like riding a rollercoaster of emotions, swinging between high-energy mania and deep lows of depression.
+                  <br>
+                  🔹 Keeping a mood journal can help you and your doctor find patterns.<br>
+                  🔹 Treatment often includes a mix of medication and therapy to help stabilize mood swings.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="assets/images/bipolar-image.png" class="img-fluid rounded"
+                  alt="Mental Health Info 4">
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h5>♾️ OCD (Obsessive-Compulsive Disorder)</h5>
+                <p>
+                  Ever feel stuck in repetitive thoughts or habits? OCD can create cycles of intrusive thoughts and behaviors that feel hard to break.
+                  <br>
+                  🔹 Exposure therapy and behavioral techniques can make a big difference.<br>
+                  🔹 Learning to separate yourself from intrusive thoughts is key.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="assets/images/ocd-image.png" class="img-fluid rounded"
+                  alt="Mental Health Info 5">
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
- <!-- Mental Health Tips Section -->
-      <section class="container my-5" id="mental-health-tips">
-        <h2 class="mb-4 text-center">Mental Health Tips</h2>
-        <div class="row g-4">
-          <div class="col-md-4 col-lg-2">
+        <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel END -->
+    </div>
+  </section>
+
+  <!-- Mental Health Tips Section (light background) -->
+  <section id="mental-health-tips" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Mental Health Tips</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-2">
             <div class="card h-100">
               <img src="assets/images/physical-mental-relaxation-mn.png" class="card-img-top" alt="Physical-and-mental-relaxation-mn">
               <div class="card-body">
@@ -255,14 +297,65 @@ Ever feel stuck in repetitive thoughts or habits? OCD can create cycles of intru
               </div>
             </div>
           </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message of the Day Section (gradient background) -->
+  <section id="message-of-the-day" class="motd-gradient-bg py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">A message for you</h2>
+      <div 
+        class="alert alert-info text-center fs-5 shadow-lg border-0 motd-gradient-bg" 
+        role="alert"
+        style="
+          border-radius: 2rem;
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+          position: relative;
+          overflow: hidden;
+          color: #14352d;
+          font-weight: 500;
+        "
+      >
+        <div id="motd-text" class="motd-message"></div>
+            <span class="d-block" data-day="1">
+              🌅 A fresh start, a new beginning! You are capable of more than you know. Take a deep breath, step forward, and trust yourself - small steps lead to great things.
+            </span>
+            <span class="d-none" data-day="2">
+              🌿 You are growing, even when you don't see it. Healing isn’t linear, and every moment of self-care matters. Be kind to yourself-your journey is unfolding beautifully.
+            </span>
+            <span class="d-none" data-day="3">
+              🌊 You are enough, just as you are. No need to prove anything or compare yourself to others. Your value isn’t measured by productivity—your presence is a gift.
+            </span>
+            <span class="d-none" data-day="4">
+              ✨You are stronger than yesterday. Challenges don’t define you; they shape you. Every obstacle you've faced has made you wiser, braver, and more resilient.
+            </span>
+            <span class="d-none" data-day="5">
+              🌞 Let joy find you today. Even on tough days, there is light. A smile, a kind word, or a quiet moment of peace—embrace the little things that lift your spirit.
+            </span>
+            <span class="d-none" data-day="6">
+              💙 Rest is powerful. You don’t have to do everything at once. Give yourself permission to pause, recharge, and nourish your soul.
+            </span>
+            <span class="d-none" data-day="0">
+              🌻 Start your week with hope. Small steps lead to big changes. Take time for yourself and let positivity guide your day.
+            </span>
+          </div>
         </div>
-      </section>
-<!-- Message of the Day Section -->
-      <section class="container my-5" id="message-of-the-day">
-        <h2 class="mb-4 text-center">Message of the Day</h2>
-        <div class="alert alert-info text-center fs-5" role="alert">
-          Every day is a new beginning. Take a deep breath, smile, and start again.
-        </div>
+        <script>
+          // Get today's day (0=Sunday, 1=Monday, ..., 6=Saturday)
+          var today = new Date().getDay();
+          var motdSpans = document.querySelectorAll('#motd-text span');
+          motdSpans.forEach(function(span) {
+            if (parseInt(span.getAttribute('data-day')) === today) {
+              span.classList.remove('d-none');
+              span.classList.add('d-block');
+            } else {
+              span.classList.remove('d-block');
+              span.classList.add('d-none');
+            }
+          });
+        </script>
+        
       </section>
     </main>
 <!-- Footer Start -->
@@ -273,18 +366,20 @@ Ever feel stuck in repetitive thoughts or habits? OCD can create cycles of intru
             <span class="fw-semibold" style="color: #14352d;">&copy; 2025 Mind Nest. All rights reserved.</span>
           </div>
           <div class="col-md-6 text-end">
-            <a href="http://www.facebook.com" class="ms-3" aria-label="Facebook" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="http://www.twitter.com" class="ms-3" aria-label="Twitter" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="http://www.instagram.com" class="ms-3" aria-label="Instagram" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-             <a href="http://www.linkedlin.com" class="ms-3" aria-label="linkedin" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+            <div class="d-inline-flex align-items-center gap-3">
+              <a href="http://www.facebook.com" aria-label="Facebook" style="color:#14352d; font-size: 1.5rem;">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="http://www.twitter.com" aria-label="Twitter" style="color:#14352d; font-size: 1.5rem;">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="http://www.instagram.com" aria-label="Instagram" style="color: #14352d; font-size: 1.5rem;">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="http://www.linkedin.com" aria-label="LinkedIn" style="color:#14352d; font-size: 1.5rem;">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -298,5 +393,6 @@ Ever feel stuck in repetitive thoughts or habits? OCD can create cycles of intru
       crossorigin="anonymous"
     ></script>
 
+    
 </body>
 </html>
