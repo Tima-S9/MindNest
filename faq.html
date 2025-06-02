@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - MindNest</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .faq-card {
+            background: linear-gradient(145deg, rgba(31, 41, 55, 0.95), rgba(17, 24, 39, 0.98));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 0.5rem;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .faq-toggle {
+            transition: transform 0.3s ease;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-green-gradient">
+    <!-- Navigation -->
+    <nav class="floating-navbar fixed top-6 left-1/2 transform -translate-x-1/2 z-50 px-8 py-3">
+        <div class="flex items-center justify-center space-x-10 w-full">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative min-h-screen overflow-hidden flex items-center justify-center">
+        <!-- Background Glow -->
+        <div class="absolute inset-0 bg-gradient"></div>
+        
+        <!-- Animated Lines -->
+        <div class="lines-container"></div>
+
+        <!-- FAQ Content -->
+        <div class="relative z-10 w-full mx-auto px-4 py-16">
+            <h1 class="text-white text-4xl font-light text-center mb-8 mt-16">Frequently Asked Questions</h1>
+            
+            <div class="faq-card rounded-xl p-4 space-y-2">
+                <!-- FAQ Items -->
+                <div class="faq-item p-3 rounded-lg cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white text-base font-medium">What is MindNest?</h3>
+                        <button class="faq-toggle text-white text-lg">+</button>
+                    </div>
+                    <div class="faq-answer text-white/80 pt-3 px-1">
+                        MindNest is a modern platform designed to provide asset defense solutions through innovative blockchain technology and financial expertise.
+                    </div>
+                </div>
+
+                <div class="faq-item p-3 rounded-lg cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white text-base font-medium">How does asset defense work?</h3>
+                        <button class="faq-toggle text-white text-lg">+</button>
+                    </div>
+                    <div class="faq-answer text-white/80 pt-3 px-1">
+                        Our asset defense system utilizes advanced blockchain technology to secure and protect your digital assets through smart contracts and decentralized protocols.
+                    </div>
+                </div>
+
+                <div class="faq-item p-3 rounded-lg cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white text-base font-medium">Is my investment safe?</h3>
+                        <button class="faq-toggle text-white text-lg">+</button>
+                    </div>
+                    <div class="faq-answer text-white/80 pt-3 px-1">
+                        Yes, we implement industry-leading security measures and follow best practices to ensure the safety of your investments. Our platform is regularly audited by third-party security firms.
+                    </div>
+                </div>
+
+                <div class="faq-item p-3 rounded-lg cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white text-base font-medium">What are the minimum requirements to start?</h3>
+                        <button class="faq-toggle text-white text-lg">+</button>
+                    </div>
+                    <div class="faq-answer text-white/80 pt-3 px-1">
+                        You can start with any amount. However, we recommend starting with at least $500 to maximize the benefits of our platform's features and minimize transaction costs.
+                    </div>
+                </div>
+
+                <div class="faq-item p-3 rounded-lg cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white text-base font-medium">How can I contact support?</h3>
+                        <button class="faq-toggle text-white text-lg">+</button>
+                    </div>
+                    <div class="faq-answer text-white/80 pt-3 px-1">
+                        Our support team is available 24/7 through our help center, email support, or live chat. Premium members also have access to dedicated phone support.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Animate lines
+        function createLines() {
+            const container = document.querySelector('.lines-container');
+            for (let i = 0; i < 20; i++) {
+                const line = document.createElement('div');
+                line.className = 'animated-line';
+                line.style.left = `${Math.random() * 100}%`;
+                line.style.animationDelay = `${Math.random() * 5}s`;
+                line.style.height = `${50 + Math.random() * 100}px`;
+                container.appendChild(line);
+            }
+        }
+
+        // Initialize animations
+        createLines();
+
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const wasActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // Toggle the clicked item
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

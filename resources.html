@@ -3,320 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous">
-      <script src="https://kit.fontawesome.com/e686eabd49.js" crossorigin="anonymous"></script>
+    <title>Resources - MindNest</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e686eabd49.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Mind Nest</title>
-    <style>
-      .navbar-mint {
-        background-color: #3eb489  !important; /* pastel mint background */
-      }
-      .navbar-mint .navbar-nav .nav-link,
-      .navbar-mint .navbar-brand {
-        color: #14352d !important;      /* darker teal for better contrast */
-        font-weight: 600 !important;    /* bolder text for visibility */
-        text-shadow: 0 1px 2px #ffffff33; /* subtle light shadow for clarity */
-      }
-      
-    </style>
 </head>
-<body>
-    <!-- Bootstrap Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-mint">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="assets/images/logo-mn.png"
-            alt="Mind Nest Logo"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-2 rounded-circle">
-          Mind Nest
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" href="resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Get in touch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Frequetly Asked Questions">FAQ</a>
-            </li>
-          </ul>
+<body class="bg-green-gradient">
+    <!-- Navigation -->
+    <nav class="floating-navbar fixed top-6 left-1/2 transform -translate-x-1/2 z-50 px-8 py-3">
+        <div class="flex items-center justify-center space-x-10 w-full">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
         </div>
-      </div>
     </nav>
-    <!-- Bootstrap Navbar End -->
-         <!-- Hero Section Start -->
-    <header class="py-5 bg-light d-flex align-items-center justify-content-center text-center"
-    style="background: url('assets/images/hero-image-lmn.png') center center/cover no-repeat; min-height: 400px; width: 100%;">
-    <div class="container h-100">
-        <div class="row justify-content-center align-items-center h-100" style="min-height: 400px;">
-            <div class="col-lg-8 text-center"> </div>
-                <h1 class="display-4 fw-bold mb-3">Welcome to Mind Nest</h1>
-                <p class="lead mb-4">
-      </p>              A space designed for tranquility, belonging, and emotional well-being.<br />
-                    🌿 <strong>Find Peace</strong> Explore resources that bring comfort and clarity.<br />
-                    💙 <strong>Feel Supported</strong> You're not alone; gentle guidance is here for you.<br />
-                    ✨ <strong>Embrace Growth</strong> Small steps can lead to powerful change.<br />
-                    Take a deep breath, settle in, and let Soul Nest be your sanctuary.
-                </p>
-            </div>
-            <a href="resources.html" class="btn btn-outline-info btn-lg">Get support</a>
-        </div>
-    </div>
-</header>
-    <!-- Hero Section End -->
-  <main>
-    <h2 id="resources" class="text-center my-5">
-      <a href="#resources" class="text-decoration-none text-dark">Resources</a>
-    </h2>
-<!-- Resources Cards Section -->
-<section class="container my-5">
-    <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <img src="assets/images/support-for-all-mn.png" class="card-img-top" alt="Support Services for all">
-                <div class="card-body">
-                    <h5 class="card-title">Support Services for All</h5>
-                    <p class="card-text">
+
+    <!-- Resources Cards Section -->
+    <section class="container mx-auto px-4 pt-24 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="shadow-xl border border-gray-100 h-full flex flex-col">
+                <div class="h-48 overflow-hidden rounded-t-2xl">
+                    <img src="assets/images/support-for-all-mn.png" class="w-full h-full object-cover object-center" alt="Support Services for all">
+                </div>
+                <div class="p-5 bg-white border-t border-gray-100 flex-grow">
+                    <h5 class="text-gray-900 text-xl font-medium mb-3">Support Services for All</h5>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
                         Find organizations and hotlines that offer immediate help and ongoing support for mental health and well-being.
                     </p>
-                    <ul class="list-unstyled ms-2">
+                    <ul class="space-y-4">
                         <li>
-                            <a href="https://www.mind.org.uk/" class="link-primary">Mind</a>
-                            <div class="small text-muted">UK charity providing advice and support to empower anyone experiencing a mental health problem.</div>
+                            <a href="https://www.mind.org.uk/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Mind</a>
+                            <div class="text-gray-600 text-sm mt-1">UK charity providing advice and support to empower anyone experiencing a mental health problem.</div>
                         </li>
                         <li>
-                            <a href="https://www.mentalhealthresource.org.uk/" class="link-primary">Mental Health Resource</a>
-                            <div class="small text-muted">Offers safe spaces and support for people struggling with their mental health.</div>
+                            <a href="https://www.mentalhealthresource.org.uk/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Mental Health Resource</a>
+                            <div class="text-gray-600 text-sm mt-1">Offers safe spaces and support for people struggling with their mental health.</div>
                         </li>
                         <li>
-                            <a href="https://www.samaritans.org/" class="link-primary">Samaritans</a>
-                            <div class="small text-muted">24/7 helpline for anyone in emotional distress or at risk of suicide.</div>
+                            <a href="https://www.samaritans.org/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Samaritans</a>
+                            <div class="text-gray-600 text-sm mt-1">24/7 helpline for anyone in emotional distress or at risk of suicide.</div>
                         </li>
                         <li>
-                            <a href="https://www.nhs.uk/mental-health/" class="link-primary">NHS Mental Health Services</a>
-                            <div class="small text-muted">Official NHS information and support for mental health, including urgent help.</div>
+                            <a href="https://www.nhs.uk/mental-health/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">NHS Mental Health Services</a>
+                            <div class="text-gray-600 text-sm mt-1">Official NHS information and support for mental health, including urgent help.</div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <img src="assets/images/support-for-mothers-resources-mn.png" class="card-img-top" alt="Support for mothers and carers">
-                <div class="card-body">
-                    <h5 class="card-title">Support for Mothers and Carers</h5>
-                    <p class="card-text">
+
+            <!-- Card 2 -->
+            <div class="shadow-xl border border-gray-100 h-full flex flex-col">
+                <div class="h-48 overflow-hidden rounded-t-2xl">
+                    <img src="assets/images/support-for-mothers-resources-mn.png" class="w-full h-full object-cover object-center transform scale-110" alt="Support for mothers and carers" style="object-position: top center;">
+                </div>
+                <div class="p-5 bg-white border-t border-gray-100 flex-grow">
+                    <h5 class="text-gray-900 text-xl font-medium mb-3">Support for Mothers and Carers</h5>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
                         Explore guides, articles, and activities to help you manage stress, build resilience, and nurture your mental health.
                     </p>
-                    <ul class="list-unstyled ms-2">
+                    <ul class="space-y-4">
                         <li>
-                            <a href="https://maternalmentalhealthalliance.org/about-maternal-mental-health/support-mums-and-families/" class="link-primary">Maternal Mental Health Alliance</a>
-                            <div class="small text-muted">Brings together organizations to improve mental health care for mothers and families.</div>
+                            <a href="https://maternalmentalhealthalliance.org/about-maternal-mental-health/support-mums-and-families/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Maternal Mental Health Alliance</a>
+                            <div class="text-gray-600 text-sm mt-1">Brings together organizations to improve mental health care for mothers and families.</div>
                         </li>
                         <li>
-                            <a href="https://www.mind.org.uk/information-support/types-of-mental-health-problems/postnatal-depression-and-perinatal-mental-health/support-and-services/" class="link-primary">Mind’s Perinatal Mental Health Support</a>
-                            <div class="small text-muted">Information and support for postnatal depression and perinatal mental health.</div>
+                            <a href="https://www.mind.org.uk/information-support/types-of-mental-health-problems/postnatal-depression-and-perinatal-mental-health/support-and-services/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Mind's Perinatal Mental Health Support</a>
+                            <div class="text-gray-600 text-sm mt-1">Information and support for postnatal depression and perinatal mental health.</div>
                         </li>
                         <li>
-                            <a href="https://www.behappyresources.co.uk/mental-health-for-mothers/" class="link-primary">Be Happy Resources </a>
-                            <div class="small text-muted">Resources and tips for mothers to support their mental health and well-being.</div>
+                            <a href="https://www.behappyresources.co.uk/mental-health-for-mothers/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Be Happy Resources</a>
+                            <div class="text-gray-600 text-sm mt-1">Resources and tips for mothers to support their mental health and well-being.</div>
                         </li>
                         <li>
-                            <a href="https://pandasfoundation.org.uk/" class="link-primary">PANDAS Foundation</a>
-                            <div class="small text-muted">Support for parents experiencing perinatal mental health challenges.</div>
+                            <a href="https://pandasfoundation.org.uk/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">PANDAS Foundation</a>
+                            <div class="text-gray-600 text-sm mt-1">Support for parents experiencing perinatal mental health challenges.</div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <img src="assets/images/local-support-services-mn.png" class="card-img-top" alt="local support services">
-                <div class="card-body">
-                    <h5 class="card-title">Local Support</h5>
-                    <p class="card-text">
+
+            <!-- Card 3 -->
+            <div class="shadow-xl border border-gray-100 h-full flex flex-col">
+                <div class="h-48 overflow-hidden rounded-t-2xl">
+                    <img src="assets/images/local-support-services-mn.png" class="w-full h-full object-cover object-center" alt="local support services">
+                </div>
+                <div class="p-5 bg-white border-t border-gray-100 flex-grow">
+                    <h5 class="text-gray-900 text-xl font-medium mb-3">Local Support</h5>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
                         Connect with groups, forums, and events that foster a sense of belonging and shared experience.
                     </p>
-                    <ul class="list-unstyled ms-2">
+                    <ul class="space-y-4">
                         <li>
-                            <a href="https://www.derbyshirehealthcareft.nhs.uk/services/talking-mental-health-derbyshire" class="link-primary">Talking Mental Health Derbyshire</a>
-                            <div class="small text-muted">Free NHS talking therapies for adults in Derbyshire.</div>
+                            <a href="https://www.derbyshirehealthcareft.nhs.uk/services/talking-mental-health-derbyshire" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Talking Mental Health Derbyshire</a>
+                            <div class="text-gray-600 text-sm mt-1">Free NHS talking therapies for adults in Derbyshire.</div>
                         </li>
                         <li>
-                            <a href="https://smhf.org.uk/" class="link-primary">Sutton Mental Health Foundation </a>
-                            <div class="small text-muted">Local support, activities, and advocacy for mental health in Sutton.</div>
+                            <a href="https://smhf.org.uk/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Sutton Mental Health Foundation</a>
+                            <div class="text-gray-600 text-sm mt-1">Local support, activities, and advocacy for mental health in Sutton.</div>
                         </li>
                         <li>
-                            <a href="https://www.bing.com/search?q=Erleigh%20Road%20Clinic&filters=local_ypid%3a" class="link-primary">Erleigh Road Clinic</a>
-                            <div class="small text-muted">Community clinic offering mental health services in Reading.</div>
+                            <a href="https://www.bing.com/search?q=Erleigh%20Road%20Clinic&filters=local_ypid%3a" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Erleigh Road Clinic</a>
+                            <div class="text-gray-600 text-sm mt-1">Community clinic offering mental health services in Reading.</div>
                         </li>
                         <li>
-                            <a href="https://www.dorsetmentalhealthforum.org.uk/" class="link-primary">Dorset Mental Health Forum</a>
-                            <div class="small text-muted">Peer-led mental health support and community projects in Dorset.</div>
+                            <a href="https://www.dorsetmentalhealthforum.org.uk/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Dorset Mental Health Forum</a>
+                            <div class="text-gray-600 text-sm mt-1">Peer-led mental health support and community projects in Dorset.</div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="container my-5" id="faq">
-    <h2 class="text-center mb-4">
-        <a href="#FAQ" class="text-decoration-none text-dark">Frequently Asked Questions</a>
-    </h2>
-    <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
-                  📌  What should I do if I need urgent mental health support?
-                </button>
-            </h2>
-            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  ➤  If you need urgent help, contact a helpline such as <a href="https://www.samaritans.org/" class="link-primary">Samaritans</a> or reach out to your local NHS mental health services immediately.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-                  📌  Are these resources free to access?
-                </button>
-            </h2>
-            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                ➤ Most of the listed resources are free or offer free support. Please check each organization's website for details.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
-                  📌  Can I get support for someone else?
-                </button>
-            </h2>
-            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  ➤  Yes, many organizations offer advice and support for carers, friends, and family members. See the "Support for Mothers and Carers" section above.
-                </div>
-            </div>
-        </div>
-            <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
-                    📌 What are early signs of mental health struggles?
-                </button>
-            </h2>
-            <div id="faqCollapseDour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  ➤ Difficulty sleeping, changes in appetite, excessive worry, withdrawal from activities or people, and feeling overwhelmed.
-                 </div>
-            </div>
-        </div>
-            <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-                   📌 How do I support someone struggling with mental health? 
-                </button>
-            </h2>
-            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  ➤ Listen without judgment, encourage seeking professional help, and offer reassurance that they’re not alone.  </div>
-            </div>
-            </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-               📌 Where can I find professional support?     
-                </button>
-            </h2>
-            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  ➤ Visit Mind, NHS Mental Health Services, or Samaritans for expert guidance and local services.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-                 📌 Can mental health conditions be treated?
-                </button>
-            </h2>
-            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    ➤ Yes! Therapy, lifestyle changes, support groups, and sometimes medication can help manage symptoms and improve well-being.  </div>
-            </div>
-        </div>
-        </div>
-        </div>
-    </div>
-    
-</section>
-</main>
-   
-<!-- Footer Start -->
-    <footer class="py-3" style="background-color: #3eb489;">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 text-start">
-            <span class="fw-semibold" style="color: #14352d;">&copy; 2025 Mind Nest. All rights reserved.</span>
-          </div>
-          <div class="col-md-6 text-end">
-            <a href="http://www.facebook.com" class="ms-3" aria-label="Facebook" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="http://www.twitter.com" class="ms-3" aria-label="Twitter" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="http://www.instagram.com" class="ms-3" aria-label="Instagram" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-             <a href="http://www.linkedlin.com" class="ms-3" aria-label="linkedin" style="color: #22644b; font-size: 1.5rem;">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer End -->
-
-    <!-- Bootstrap JS -->
-        <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-
+    </section>
 </body>
 </html>
