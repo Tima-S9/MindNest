@@ -1,12 +1,13 @@
- .navbar-mint {
-        background-color: #3eb489  /* pastel mint background */
-      }
-      .navbar-active-link {
+.navbar-mint {
+        background-color: #3eb489  !important; /* pastel mint background */
+}
+     
+        .navbar-active-link {
         color:#14352d  /* darker teal for active links */
       }
       
-      .hero {
-    background: url('../assets/images/hero-image-lmn.png') center center/cover no-repeat; 
+    .hero {
+    background: url('../assets/images/hero-imag.PNG') center center/cover no-repeat; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
