@@ -42,8 +42,16 @@ Wireframes & Layout Considerations
 - Minimalist, uncluttered design for a calming and welcoming experience
 - Soft color palettes (mint green, beige, soft white dark greens gradient-colours) to evoke peace and tranquility
 
-![image palette for mn website](image.png)
 - Hero sections with nature background image to create a soothing atmosphere
+
+
+
+![image palette for mn website](<assets/images/image.png>)
+
+![wireframe index](<assets/images/wireframe-mn-index.PNG >)
+
+![wireframe resources](<assets/images/wireframe-mn-resources.PNG>)
+
 
 Accessibility Considerations
 - Large, readable fonts for easy text comprehension
