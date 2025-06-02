@@ -8,49 +8,14 @@
       rel="stylesheet"
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous">
-      <script src="https://kit.fontawesome.com/e686eabd49.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/e686eabd49.js" crossorigin="anonymous">
+      </script><link rel="stylesheet" href="assets/css/styles.css">
     <title>Mind Nest</title>
-    <link rel="stylesheet" href="styles.css">
-
+    
     <style>
       .navbar-mint {
-        background-color: #3eb489  /* pastel mint background */
-      }
-      .navbar-active-link {
-        color:#14352d  !important; /* darker teal for active links */
-      }
-      
-       Make the depression image bigger than its text on all screens
-      #infoCarousel .carousel-item .col-md-6.text-center img[alt="Mental Health Info 3"] {
-        width: 100%;
-        height: 100%;
-        max-width: 400px;
-        max-height: 400px;
-        min-width: 250px;
-        min-height: 250px;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-        margin: auto;
-        z-index: 1;
-      }
-     
-          .motd-gradient-bg {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%, #fcb69f 80%, #a1c4fd 100%);
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(135deg, #a8edea 0%, #fed6e3 100%, #fcb69f 80%, #a1c4fd 100%);
-          }
-       
-
-      @media (max-width: 767.98px) {
-        #infoCarousel .carousel-item .col-md-6.text-center img[alt="Mental Health Info 3"] {
-          width: 100%;
-          height: 260px;
-          max-width: 100%;
-          max-height: 260px;
-          min-width: 180px;
-          min-height: 180px;
-        }
-      }
+        background-color: #3eb489  !important; /* pastel mint background */
+      }   
     </style>
 </head>
 <body>
@@ -97,22 +62,21 @@
     </nav>
     <!-- Bootstrap Navbar End -->
          <!-- Hero Section Start -->
-    <section class="hero-section">
-    <div class="container text-center">
-            <div class="col-lg-8 text-center"> 
-                <h1 class="display-4 fw-bold mb-3">Welcome to Mind Nest</h1>
+    <header class="hero text-center">
+    <div class="container">
+        <div class="row justify-content-center align-items-center h-100">
+                <h2 class="display-4 fw-bold mb-3">Welcome to Mind Nest</h1>
                 <p class="lead mb-4" style="color: #f6d1c1;">
               A space designed for tranquility, belonging, and emotional well-being.<br>
-                    </p>
-                    🌿 <strong>Find Peace</strong><p style="color: #fbf4f9;"> Explore resources that bring comfort and clarity.</p><br>
+                    </p>                    🌿 <strong>Find Peace</strong><p style="color: #fbf4f9;"> Explore resources that bring comfort and clarity.</p><br>
                     💙 <strong>Feel Supported</strong><p style="color: #fbf4f9">You're not alone; gentle guidance is here for you.</p><br>
-                    ✨ <strong>Embrace Growth</strong><p style="color: #fbf4f9">Small steps can lead to powerful change.></p> <br>      
+                    ✨ <strong>Embrace Growth</strong><p style="color: #fbf4f9">Small steps can lead to powerful change.</p> <br>      
             </div>
-            </div>
-            <a href="resources.html" class="btn btn-outline-warning btn-lg">Get support</a>
-        </div></section>
+            <a href="index.html" class="btn btn-outline-warning btn-lg">Back to homepage</a>
+    </div>
+          </header>
     <!-- Hero Section End -->
-    <main>
+
   <!-- Information Section with Carousel (gradient background) -->
   <section id="information" class="motd-gradient-bg py-5" style="border-radius: 0; margin-bottom: 0;">
     <div class="container">
@@ -337,23 +301,7 @@
             </span>
           </div>
         </div>
-        <script>
-          // Get today's day (0=Sunday, 1=Monday, ..., 6=Saturday)
-          var today = new Date().getDay();
-          var motdSpans = document.querySelectorAll('#motd-text span');
-          motdSpans.forEach(function(span) {
-            if (parseInt(span.getAttribute('data-day')) === today) {
-              span.classList.remove('d-none');
-              span.classList.add('d-block');
-            } else {
-              span.classList.remove('d-block');
-              span.classList.add('d-none');
-            }
-          });
-        </script>
-        
-      </section>
-    </main>
+        </section>
 <!-- Footer Start -->
     <footer class="py-3" style="background-color: #3eb489;">
       <div class="container">

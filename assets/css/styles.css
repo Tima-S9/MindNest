@@ -1,18 +1,21 @@
+ .navbar-mint {
+        background-color: #3eb489  /* pastel mint background */
+      }
+      .navbar-active-link {
+        color:#14352d  /* darker teal for active links */
+      }
+      
+      .hero {
+    background: url('../assets/images/hero-image-lmn.png') center center/cover no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFEBD4;
+    padding: 8rem 0;
+    min-height: 400px;
+        }
+/* Hero section */
 
-/*hero image */
-#hero-image {
-  background: url('../assets/images/hero-image-lmn.PNG') center center/cover no-repeat;
-  min-height: 400px;
-  width: 100%;
-}
-
-/* Carousel base styles: images and text each take 50% of row */
-#infoCarousel .carousel-item .row {
-  min-height: 350px;
-  height: 100%;
-  align-items: stretch;
-  display: flex;
-}
 #infoCarousel .carousel-item .col-md-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -34,9 +37,6 @@
   max-width: 300px;
   max-height: 300px;
   aspect-ratio: 1 / 1; /* Square by default */
-  object-fit: contain;
-  display: block;
-  margin: auto;
   background: #f8f9fa;
   border-radius: 1rem;
   box-shadow: 0 2px 8px #0001;
@@ -49,39 +49,15 @@
 }
 /* Depression image: bigger than text */
 #infoCarousel .carousel-item .col-md-6.text-center img[alt="Mental Health Info 3"] {
-  width: 100%;
-  height: 100%;
+ 
   max-width: 100%;
   max-height: 100%;
-  min-width: 50%;
-  min-height:50%;
+
   aspect-ratio: 1/1;
-  object-fit: contain;
-  margin: 0;
+  
   z-index: 1;
 }
-.navbar-mint {
-        background-color: #3eb489  /* pastel mint background */
-      }
-      .navbar-active-link {
-        color:#14352d  !important; /* darker teal for active links */
-      }
-      
-       Make the depression image bigger than its text on all screens
-      #infoCarousel .carousel-item .col-md-6.text-center img[alt="Mental Health Info 3"] {
-        width: 100%;
-        height: 100%;
-        max-width: 400px;
-        max-height: 400px;
-        min-width: 250px;
-        min-height: 250px;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-        margin: auto;
-        z-index: 1;
-      }
-     
-          .motd-gradient-bg {
+ .motd-gradient-bg {
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%, #fcb69f 80%, #a1c4fd 100%);
             /* fallback for old browsers */
             background: -webkit-linear-gradient(135deg, #a8edea 0%, #fed6e3 100%, #fcb69f 80%, #a1c4fd 100%);
@@ -97,14 +73,12 @@
           min-width: 180px;
           min-height: 180px;
         }
-      }
-@media (max-width: 767.98px) {
-  #infoCarousel .carousel-item .col-md-6 {
+        #infoCarousel .carousel-item .col-md-6 {
     max-width: 100%;
     flex: 0 0 100%;
     padding: 1rem 0.5rem;
     height: auto;
-  }
+      }
   #infoCarousel .carousel-item .row {
     min-height: 0;
     height: auto;
