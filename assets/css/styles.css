@@ -12,8 +12,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-
-  padding: 2rem 1rem  box-sizing: border-box;
+  padding: 2rem 1rem;  box-sizing: border-box;
 }
 #infoCarousel .carousel-item .col-md-6.text-center {
   align-items: center;
