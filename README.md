@@ -11,12 +11,12 @@ Table of Contents
 - Credits
 
 # Overview
-Mind Nest is a welcoming mental health support platform designed to offer affirmations, emotional encouragement, and a tranquil space for individuals—especially mothers—navigating life's challenges. This site fosters kindness, inclusivity, and self-care, providing resources to uplift and empower visitors.
+Mind Nest is a welcoming mental health support platform designed to offer resources, emotional encouragement, and a tranquil space for everyone including mothers—navigating life's challenges. This site fosters kindness, inclusivity, and self-care, providing resources to uplift and empower visitors.
 
 #Target Audience
 - Mothers and caregivers facing mental health challenges
 - Individuals seeking emotional encouragement and self-care
-- Those looking for uplifting affirmations and tranquil visuals
+- Those looking for uplifting affirmations
 - Anyone in need of a comforting, inclusive digital sanctuary
 # User Stories
 Peaceful and organized Design
