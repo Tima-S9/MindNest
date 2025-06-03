@@ -5,9 +5,9 @@
         .navbar-active-link {
         color:#14352d  /* darker teal for active links */
       }
-      
+      /* Hero section */
     .hero {
-    background: url('/assets/images/hero-image-mn.png') center center/cover no-repeat; 
+    background: url('/assets/images/background-image.png') center center/cover no-repeat; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,7 +15,7 @@
     padding: 8rem 0;
     min-height: 400px;
         }
-/* Hero section */
+
 
 #infoCarousel .carousel-item .col-md-6 {
   flex: 0 0 50%;
