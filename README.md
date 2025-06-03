@@ -40,8 +40,8 @@ Positive Affirmations & Uplifting Quotes
 # UX Design 
 Wireframes & Layout Considerations
 - Minimalist, uncluttered design for a calming and welcoming experience
+- Use Balsamic to create wireframes pages
 - Soft color palettes (mint green, beige, soft white dark greens gradient-colours) to evoke peace and tranquility
-
 - Hero sections with nature background image to create a soothing atmosphere
 
 
@@ -84,10 +84,10 @@ Assisted with efficient coding, including HTML structure, CSS styling, and respo
 
 # Deployment and dependencies
 
-# Accounts
-# AI Implementation
-# Testing and Validation
+Deployed via GitHub Pages. Resolved broken links to ensure all external links opened correctly.
 
+# Testing and Validation
+## w3 validation:
 css validator paased:
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
@@ -97,20 +97,19 @@ css validator paased:
     </a>
 </p>
 
-index.html w3 validator passed
-resources.
+index.html w3 validator passed.
 
-html w3 validator passed
+resources.html w3 validator passed.
+### Lighthouse testing:
+- Performance: 88
+- Accessibility: 98
+- Best Practices: 96
 ### **Accessibility Testing:** 
 
 Ensuring alt-text, ARIA labels, and keyboard navigability.
 
 ### **Performance Testing:** 
 Optimizing for smooth user experience.
-###**User Feedback Iterations:** 
-
-Continuous refinement based on user insights.
-
 
 # References & External Links
 https://www.mind.org.uk/
@@ -140,7 +139,7 @@ https://www.dorsetmentalhealthforum.org.uk/
 # Credits
 Concepts: Author
 
-Development: Author
+Development: Author, github copilot
 
 Images: copilot Dall.e, open Ai
 
