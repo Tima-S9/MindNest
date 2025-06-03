@@ -7,7 +7,7 @@
       }
       /* Hero section */
     .hero {
-    background: url('assets/images/background-image.png') center center/cover no-repeat; 
+    background: url('/MindNest/assets/images/background-image.png') center center/cover no-repeat; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
